@@ -1,47 +1,139 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
-.logo{
-    margin: 30px 30px;
-    height: 10px;
+
+body {
+    max-width: 1440px;
     background-color: #ffffff;
 }
+
+.logo {
+    margin: 30px 30px 20px 30px;
+    height: 10px;
+     background-color: blue; 
+    background-color: #ffffff;
+}
+
 .logo img {
     height: 40px;
 }
-.main{
-    margin: 0px auto;
+
+.main {
+    display: flex;
+    justify-content: center;
+    margin: 50px 200px 10px 200px;
+    border-radius: 10px;
+    font-family: sans-serif;
+    background-color: #6099fa;
+    border-radius: 10px;
 }
-#sender{
+
+#sender {
     float: right;
     width: 150px;
     height: 25px;
     font-size: 15px;
-    margin: 30px 100px;
+    margin: 30px 10px;
+    text-align: center;
+    border-radius: 5px;
 }
-form{
-    width: 700px;
-    background-color: #F5FBFF;
-    margin: 50px auto;
-    height: 400px;
-    border: 1px solid #F5FBFF;
+
+#area1 {
+    margin: auto 60px;
+    width: 80%;
+    height: 250px;
     border-radius: 10px;
+    padding: 20px;
+    outline: none;
 }
-#area1{
-    margin: 0px 0px 0px 150px;
-    width: 330px;
-    height: 200px;
-}
-.contact{
+
+.repeat {
     margin-top: 10px;
-    margin-left: 150px;
+    margin-left: 60px;
 }
-h5{
+
+.repeat input {
+    height: 25px;
+    width: 320px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #F5FBFF;
+    margin-bottom: 8px;
+    padding-left: 10px;
+    font-size: 16px;
+}
+.phoneArea {
+    margin-left: 5px;
+}
+button {
+    margin-top: 24px;
+    margin-right: 36px;
+    padding: 6px 8px;
+}
+h5 {
     float: right;
-    padding-top: 50px;
-    padding-right: 10px;
+    margin-top: 50px;
+    margin-bottom: 10px;
     font-style: italic;
-    color: #1F9FEC;
+    color: #12669b;
 }
+
+@media only screen and (max-width: 768px) {
+    body {
+        max-width: 100%;
+    }
+
+    .main {
+        width: 85%;
+        margin: 35px auto;
+    }
+
+    .logo img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+    section {
+        width: 90%;
+        margin: 30px auto;
+
+    }
+
+    #sender {
+        float: none;
+        display: block;
+        margin: 10px auto;
+        width: 50%;
+    }
+    #area1 {
+        width: 80%;
+        display: block;
+        margin:  auto;
+    }
+    .nameArea {
+        margin-left: 5px;
+    }
+    .phoneArea {
+        margin-left: 5px;
+    }
+    .repeat {
+        margin-left: 0px;
+    }
+    .repeat input {
+        width: 80%;
+        display: block;
+        margin: 25px auto;
+        padding-left: 10px;
+    }
+    button {
+        margin-right: 16px;
+        margin-top: -5px;
+    }
+    h5 {
+        float: right;
+        padding-right: 15px;
+    }
+} 
